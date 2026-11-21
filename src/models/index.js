@@ -14,7 +14,7 @@ const seedDatosBase = async () => {
         await Genero.findOrCreate({ where: { nombre } });
     }
 
-    await Director.findOrCreate({ where: { nombre: 'Desconocido' } });
+    await Director.findOrCreate({ where: { nombres: 'Desconocido' } });
     await Productora.findOrCreate({ where: { nombre: 'Independiente' } });
     await Tipo.findOrCreate({ where: { nombre: 'Pelicula' } });
     await Tipo.findOrCreate({ where: { nombre: 'Serie' } });
